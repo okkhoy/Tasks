@@ -36,6 +36,7 @@ public class Main {
 
     private static int countDeadlines(ArrayList<Task> tasksData) {
         int count = 0;
+        for(Task t: tasksData) {
             if (t instanceof Deadline) {
                 count++;
             }
